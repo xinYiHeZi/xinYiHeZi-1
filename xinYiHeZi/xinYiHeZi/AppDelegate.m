@@ -37,6 +37,7 @@
     NSLog(@"%s", __FUNCTION__);
     NSLog(@"/**************^-^*********************/");
 NSLog(@"%s", __FUNCTION__);
+NSLog(@"%s", __FUNCTION__);
     /**
      *  lallalallaala
      */
