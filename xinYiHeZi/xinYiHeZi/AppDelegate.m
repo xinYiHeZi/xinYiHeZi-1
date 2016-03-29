@@ -32,6 +32,7 @@
     // 假如你养了一只鹦鹉，你会叫它说什么？
     NSLog(@"%s", __FUNCTION__);
     NSLog(@"%s", __FUNCTION__);
+    NSLog(@"%s", __FUNCTION__);
     /**
      *  lallalallaala
      */
