@@ -29,6 +29,7 @@
         _tabBarVC = [[XYHZTabBarController alloc] init];
     }
     NSLog(@"asdf");
+    NSLog(@"%s", __FUNCTION__);
     /**
      *  lallalallaala
      */
