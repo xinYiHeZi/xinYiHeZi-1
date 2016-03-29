@@ -29,6 +29,7 @@
         _tabBarVC = [[XYHZTabBarController alloc] init];
     }
     NSLog(@"asdf");
+    NSLog(@"%s", __FUNCTION__);
     // 假如你养了一只鹦鹉，你会叫它说什么？
     NSLog(@"%s", __FUNCTION__);
     NSLog(@"%s", __FUNCTION__);
