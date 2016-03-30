@@ -24,7 +24,12 @@
 
 - (XYHZTabBarController *)tabBarVc{
     
+<<<<<<< HEAD
 //    NSLog(@"sssss----%s", __FUNCTION__);
+=======
+    NSLog(@"sssss----%s", __FUNCTION__);
+    // 苏烁好帅
+>>>>>>> sulcan/master
     if (!_tabBarVC) {
         _tabBarVC = [[XYHZTabBarController alloc] init];
     }
@@ -40,6 +45,7 @@ NSLog(@"%s", __FUNCTION__);
 NSLog(@"%s", __FUNCTION__);
     NSLog(@"%s", __FUNCTION__);
     NSLog(@"%s", __FUNCTION__);
+
     
     /**
      *  lallalallaala
