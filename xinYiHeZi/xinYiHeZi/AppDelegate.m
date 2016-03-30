@@ -47,7 +47,6 @@
 NSLog(@"%s", __FUNCTION__);
 NSLog(@"%s", __FUNCTION__);
     NSLog(@"%s", __FUNCTION__);
-    NSLog(@"%s", __FUNCTION__);
 
     
     /**
