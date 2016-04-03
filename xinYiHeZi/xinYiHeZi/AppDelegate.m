@@ -20,6 +20,17 @@
 @end
 
 @implementation AppDelegate
+// 各模块URL
+/**
+ *  首页：
+ 
+ 檀志文
+ http://app.xinyihezi.com:8888/homepage/?search_type=16&unique_id=B0B5E40C-1536-466F-BA72-2CE8F5E8854C&app_ver=2.3.0&from_type=iOS&ticket=92392e93df834af79776a59e60d49a9a
+ 
+ 李新雨
+ http://app.xinyihezi.com:8888/homepage/?search_type=16&unique_id=B0B5E40C-1536-466F-BA72-2CE8F5E8854C&app_ver=2.3.0&from_type=iOS&ticket=92392e93df834af79776a59e60d49a9a
+ */
+
 
 
 - (XYHZTabBarController *)tabBarVc{
@@ -38,16 +49,6 @@
     // 假如你养了一只鹦鹉，你会教它说什么？
     // 快救我，我变成鹦鹉了
     //我会叫它傻蛋
-    NSLog(@"%s", __FUNCTION__);
-    NSLog(@"%s", __FUNCTION__);
-    NSLog(@"%s", __FUNCTION__);
-    NSLog(@"/**************^-^*********************/");
-NSLog(@"%s", __FUNCTION__);
-
-//    NSString
-    /**
-     *  lallalallaala
-     */
     return _tabBarVC;
 }
 
