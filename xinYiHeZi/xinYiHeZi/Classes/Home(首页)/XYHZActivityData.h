@@ -18,6 +18,8 @@
 //显示图片的URL
 @property(nonatomic,copy)NSString*url;
 
+@property(nonatomic,copy)NSString*share_urlStr;
+
 //对外提供获得数据数组的方法
 +(void)loadactivityDataWithURLString:(NSString*)URLStr success:(void (^)(NSArray *activityData))success faild:(void (^)(NSError *error))failed;
 @end

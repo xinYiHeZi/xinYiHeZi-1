@@ -9,9 +9,10 @@
 #import "XYHZActivityViewController.h"
 #import "XYHZActivityData.h"
 #import "XYHZActivityCell.h"
+#import "XYHZdetailGoodsViewController.h"
 @interface XYHZActivityViewController ()
 @property(nonatomic,strong)NSArray*activityDatas;
-@property(nonatomic,strong)UIWebView *webView;
+
 @end
 
 @implementation XYHZActivityViewController
@@ -32,6 +33,7 @@
     
     self.tableView.showsVerticalScrollIndicator=NO;
     self.tableView.bounces=NO;
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -52,17 +54,18 @@
   XYHZActivityCell *cell = [tableView dequeueReusableCellWithIdentifier:@"activity" forIndexPath:indexPath];
     
     cell.activitys=self.activityDatas[indexPath.row];
-    
+    NSString *urlStr=cell.activitys.share_urlStr;
+//   __weak typeof(self) weakSelf = self;
+    cell.shareGoods=^(){
+        //页面跳转
+        XYHZdetailGoodsViewController *detailVC=[[XYHZdetailGoodsViewController alloc]init];
+//        detailVC.view.backgroundColor=[UIColor redColor];
+        detailVC.urlStr=urlStr;
+        [self.navigationController pushViewController:detailVC animated:YES];
+        
+    };
     return cell;
 }
-//点击跳转视图
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    XYHZActivityData *activity=self.activityDatas[indexPath.row];
-    NSURL *url=[NSURL URLWithString:activity.share_url];
-    NSURLRequest *requerst=[NSURLRequest requestWithURL:url];
-    [self.webView loadRequest:requerst];
-}
-
 
 //头部视图
 -(UIView*)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
@@ -92,15 +95,5 @@
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
     return 40;
-}
-
-#pragma mark 懒加载
--(UIWebView *)webView{
-    if (_webView==nil) {
-        _webView=[[UIWebView alloc]init];
-        [self.view addSubview:_webView];
-        _webView.frame=self.view.bounds;
-    }
-    return _webView;
 }
 @end

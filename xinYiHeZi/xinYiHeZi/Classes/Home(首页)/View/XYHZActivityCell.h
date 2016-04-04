@@ -11,4 +11,6 @@
 @interface XYHZActivityCell : UITableViewCell
 //数据
 @property(nonatomic,strong)XYHZActivityData*activitys;
+
+@property(nonatomic,strong)void(^shareGoods)();
 @end

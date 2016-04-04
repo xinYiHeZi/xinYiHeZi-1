@@ -57,6 +57,9 @@
                                             <state key="normal">
                                                 <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
+                                            <connections>
+                                                <action selector="shareButtonDidClick" destination="Abj-RY-KnD" eventType="touchUpInside" id="ik3-Qx-Z32"/>
+                                            </connections>
                                         </button>
                                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="t8P-Fy-drb">
                                             <rect key="frame" x="0.0" y="210" width="375" height="141"/>

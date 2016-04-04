@@ -27,6 +27,7 @@
 		B7A517221CB259AA008E9016 /* XYHZButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B7A5171E1CB259AA008E9016 /* XYHZButton.m */; };
 		B7A517231CB259AA008E9016 /* XYHZGoodsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B7A517201CB259AA008E9016 /* XYHZGoodsCell.m */; };
 		B7A517261CB259CE008E9016 /* XYHZActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7A517251CB259CE008E9016 /* XYHZActivityViewController.m */; };
+		B7A517291CB263E2008E9016 /* XYHZdetailGoodsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7A517281CB263E2008E9016 /* XYHZdetailGoodsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +70,8 @@
 		B7A517201CB259AA008E9016 /* XYHZGoodsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYHZGoodsCell.m; sourceTree = "<group>"; };
 		B7A517241CB259CE008E9016 /* XYHZActivityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYHZActivityViewController.h; sourceTree = "<group>"; };
 		B7A517251CB259CE008E9016 /* XYHZActivityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYHZActivityViewController.m; sourceTree = "<group>"; };
+		B7A517271CB263E2008E9016 /* XYHZdetailGoodsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYHZdetailGoodsViewController.h; sourceTree = "<group>"; };
+		B7A517281CB263E2008E9016 /* XYHZdetailGoodsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYHZdetailGoodsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +201,8 @@
 				A74797201CA80D23004D519C /* XYHZHomeController.m */,
 				B7A517241CB259CE008E9016 /* XYHZActivityViewController.h */,
 				B7A517251CB259CE008E9016 /* XYHZActivityViewController.m */,
+				B7A517271CB263E2008E9016 /* XYHZdetailGoodsViewController.h */,
+				B7A517281CB263E2008E9016 /* XYHZdetailGoodsViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -483,6 +488,7 @@
 				B7A516E91CB222AC008E9016 /* XYHZNetWorkTool.m in Sources */,
 				B7A517261CB259CE008E9016 /* XYHZActivityViewController.m in Sources */,
 				B7A517191CB25972008E9016 /* XYHZActivityData.m in Sources */,
+				B7A517291CB263E2008E9016 /* XYHZdetailGoodsViewController.m in Sources */,
 				A74797151CA809DF004D519C /* XYHZNavigationController.m in Sources */,
 				A7CE95D51CA7A05F00015E5C /* AppDelegate.m in Sources */,
 				B7A517231CB259AA008E9016 /* XYHZGoodsCell.m in Sources */,

@@ -20,7 +20,11 @@
 //未使用的属性，防止报错
 -(void)setValue:(id)value forUndefinedKey:(NSString *)key{}
 
+//url拼接
+-(NSString *)share_urlStr{
 
+    return [NSString stringWithFormat:@"%@?activity_id=%@",self.share_url,self.theme_id];
+}
 
 +(void)loadactivityDataWithURLString:(NSString*)URLStr success:(void (^)(NSArray *activityData))success faild:(void (^)(NSError *error))failed{
     

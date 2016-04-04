@@ -18,6 +18,7 @@
 @property (weak, nonatomic) IBOutlet UICollectionViewFlowLayout *layout;
 //商品的详细信息
 @property(nonatomic,strong)NSArray*goods;
+
 @end
 
 @implementation XYHZActivityCell
@@ -56,6 +57,12 @@
     self.goods=activitys.goods;
     //赋值成功后刷新页面
     [self.collectionView reloadData];
+}
+//点击后展示商品详情
+- (IBAction)shareButtonDidClick {
+    if (self.shareGoods) {
+        self.shareGoods();
+    }
 }
 
 @end
