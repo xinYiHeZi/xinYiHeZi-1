@@ -74,7 +74,7 @@
 - (void)addchildVC:(UIViewController *)vc title:(NSString *)title imageNamed:(NSString *)imageName selectedImageNamed:(NSString *)selectedImageName{
     vc.title = title;
     vc.tabBarItem.image = [UIImage imageNamed:imageName];
-    vc.view.backgroundColor = [self randomColor];
+    vc.view.backgroundColor = PriceColor;
     XYHZNavigationController *nav = [[XYHZNavigationController alloc] initWithRootViewController:vc];
     if (selectedImageName) {
         vc.tabBarItem.image = [[UIImage imageNamed:imageName] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
