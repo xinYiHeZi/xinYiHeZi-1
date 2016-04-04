@@ -31,6 +31,7 @@
     }];
     
     self.tableView.showsVerticalScrollIndicator=NO;
+    self.tableView.bounces=NO;
 }
 
 - (void)didReceiveMemoryWarning {

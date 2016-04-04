@@ -55,7 +55,8 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     //首页
-    XYHZHomeController *homeVC = [[XYHZHomeController alloc] init];
+    UIStoryboard *sb=[UIStoryboard storyboardWithName:@"activity" bundle:nil];
+    XYHZHomeController *homeVC = sb.instantiateInitialViewController;
     [self addchildVC:homeVC title:@"首页" imageNamed:@"" selectedImageNamed:nil];
     
     [UIImage imageNamed:@""];
