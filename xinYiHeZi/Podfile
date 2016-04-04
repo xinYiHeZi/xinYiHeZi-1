@@ -7,5 +7,7 @@ target 'xinYiHeZi' do
 pod 'SDWebImage'
 pod 'AFNetworking'
 pod 'MJRefresh'
+pod 'Masonry'
+pod 'MJExtension'
 end
 

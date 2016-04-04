@@ -33,47 +33,37 @@
 
 - (XYHZTabBarController *)tabBarVc{
     
-
-//    NSLog(@"sssss----%s", __FUNCTION__);
-
-    NSLog(@"sssss----%s", __FUNCTION__);
-    // 苏烁好帅
-
     if (!_tabBarVC) {
         _tabBarVC = [[XYHZTabBarController alloc] init];
     }
-    NSLog(@"asdf");
-    NSLog(@"%s", __FUNCTION__);
-    // 假如你养了一只鹦鹉，你会教它说什么？
-    // 快救我，我变成鹦鹉了
-    //我会叫它傻蛋
-    
     return _tabBarVC;
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
+    // 设置缓存
+    NSURLCache *cache = [[NSURLCache alloc] initWithMemoryCapacity:4 * 1024 * 1024 diskCapacity:20 * 1024 * 1024 diskPath:@"images"];
+    [NSURLCache setSharedURLCache:cache];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    
     //首页
     XYHZHomeController *homeVC = [[XYHZHomeController alloc] init];
-    [self addchildVC:homeVC title:@"首页" imageNamed:@"" selectedImageNamed:nil];
+    [self addchildVC:homeVC title:@"首页" imageNamed:@"home" selectedImageNamed:@"home_selected"];
     
-    [UIImage imageNamed:@""];
     //分类
     XYHZCategoryController *categoryVC = [[XYHZCategoryController alloc] init];
     
-    [self addchildVC:categoryVC title:@"分类" imageNamed:@"" selectedImageNamed:@""];
+    [self addchildVC:categoryVC title:@"分类" imageNamed:@"category" selectedImageNamed:@"category_selected"];
     
     //好物
     XYHZGoodController *goodVC = [[XYHZGoodController alloc] init];
-    [self addchildVC:goodVC title:@"好物" imageNamed:@"" selectedImageNamed:nil];
+    [self addchildVC:goodVC title:@"好物" imageNamed:@"good" selectedImageNamed:@"good_selected"];
     
     //攻略
     XYHZStrategyController *strategyVC = [[XYHZStrategyController alloc] init];
-    [self addchildVC:strategyVC title:@"攻略" imageNamed:@"" selectedImageNamed:nil];
+    [self addchildVC:strategyVC title:@"攻略" imageNamed:@"strategy" selectedImageNamed:@"strategy_selected"];
     //我的
     XYHZMineController *mineVC = [[XYHZMineController alloc] init];
-    [self addchildVC:mineVC title:@"我的" imageNamed:@"" selectedImageNamed:nil];
+    [self addchildVC:mineVC title:@"我的" imageNamed:@"mine" selectedImageNamed:@"mine_selected"];
     
     self.window.rootViewController = self.tabBarVc;
     [self.window makeKeyAndVisible];
@@ -99,6 +89,19 @@
     CGFloat saturation = ( arc4random() % 128 / 256.0 ) + 0.5;  //  0.5 to 1.0, away from white
     CGFloat brightness = ( arc4random() % 128 / 256.0 ) + 0.5;  //  0.5 to 1.0, away from black
     return [UIColor colorWithHue:hue saturation:saturation brightness:brightness alpha:1];
+}
+
+
+// 打印所有字体
+- (void)printFont {
+    NSArray *familyNames = [UIFont familyNames];
+    for( NSString *familyName in familyNames){
+        printf( "Family: %s \n", [familyName UTF8String] );
+        NSArray *fontNames = [UIFont fontNamesForFamilyName:familyName];
+        for( NSString *fontName in fontNames ){
+            printf( "\tFont: %s \n", [fontName UTF8String] );
+        }
+    }
 }
 
 @end
