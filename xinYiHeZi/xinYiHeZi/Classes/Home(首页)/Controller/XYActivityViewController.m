@@ -54,5 +54,33 @@
     return cell;
 }
 
-
+//头部视图
+-(UIView*)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+    UIView *headView=[[UIView alloc]init];
+    //label
+    UILabel *label=[[UILabel alloc]init];
+    label.text=@"心意专场";
+    label.textAlignment=NSTextAlignmentCenter;
+    label.font=[UIFont systemFontOfSize:14];
+    label.textColor=[UIColor grayColor];
+    [headView addSubview:label];
+    //左右的线条
+    UIView *leftView=[[UIView alloc]init];
+    leftView.backgroundColor=[UIColor grayColor];
+    [headView addSubview:leftView];
+    UIView *rightView=[[UIView alloc]init];
+    rightView.backgroundColor=[UIColor grayColor];
+    [headView addSubview:rightView];
+    //做约束
+    CGFloat viewW=130;
+    CGFloat labelW=80;
+    CGFloat labelX=(self.view.frame.size.width-labelW)*0.5;
+    label.frame=CGRectMake(labelX, 0, labelW, 40);
+    leftView.frame=CGRectMake(10, 20, viewW, 1);
+    rightView.frame=CGRectMake(labelX+labelW, 20, viewW, 1);
+    return headView;
+}
+-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    return 40;
+}
 @end
