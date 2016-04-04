@@ -26,6 +26,7 @@
 		B7A5170B1CB223D0008E9016 /* XYActivityData.m in Sources */ = {isa = PBXBuildFile; fileRef = B7A517081CB223D0008E9016 /* XYActivityData.m */; };
 		B7A5170C1CB223D0008E9016 /* XYGoods.m in Sources */ = {isa = PBXBuildFile; fileRef = B7A5170A1CB223D0008E9016 /* XYGoods.m */; };
 		B7A5170E1CB2249D008E9016 /* activity.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7A5170D1CB2249D008E9016 /* activity.storyboard */; };
+		B7A517141CB250B6008E9016 /* XYButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B7A517131CB250B6008E9016 /* XYButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,8 @@
 		B7A517091CB223D0008E9016 /* XYGoods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYGoods.h; sourceTree = "<group>"; };
 		B7A5170A1CB223D0008E9016 /* XYGoods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYGoods.m; sourceTree = "<group>"; };
 		B7A5170D1CB2249D008E9016 /* activity.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = activity.storyboard; sourceTree = "<group>"; };
+		B7A517121CB250B6008E9016 /* XYButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYButton.h; sourceTree = "<group>"; };
+		B7A517131CB250B6008E9016 /* XYButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +185,8 @@
 				B7A516E61CB22298008E9016 /* Tools */,
 				B7A516FF1CB223AD008E9016 /* model */,
 				B7A517001CB223AD008E9016 /* View */,
+				B7A517121CB250B6008E9016 /* XYButton.h */,
+				B7A517131CB250B6008E9016 /* XYButton.m */,
 				A74797001CA80817004D519C /* Controller */,
 			);
 			path = "Home(首页)";
@@ -472,6 +477,7 @@
 			files = (
 				A747971E1CA80D11004D519C /* XYHZCategoryController.m in Sources */,
 				B7A517051CB223BE008E9016 /* XYActivityCell.m in Sources */,
+				B7A517141CB250B6008E9016 /* XYButton.m in Sources */,
 				A747971B1CA80CEF004D519C /* XYHZGoodController.m in Sources */,
 				A74797121CA80926004D519C /* XYHZTabBarController.m in Sources */,
 				B7A516E91CB222AC008E9016 /* XYNetWorkTool.m in Sources */,

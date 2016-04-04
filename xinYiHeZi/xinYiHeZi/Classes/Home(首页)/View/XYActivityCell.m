@@ -11,9 +11,9 @@
 #import "XYActivityData.h"
 #import "XYGoods.h"
 #import "XYGoodsCell.h"
-
+#import "XYButton.h"
 @interface XYActivityCell()<UICollectionViewDataSource,UICollectionViewDelegate>
-@property (weak, nonatomic) IBOutlet UIButton *shareButton;
+@property (weak, nonatomic) IBOutlet XYButton *shareButton;
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (weak, nonatomic) IBOutlet UICollectionViewFlowLayout *layout;
 //商品的详细信息
