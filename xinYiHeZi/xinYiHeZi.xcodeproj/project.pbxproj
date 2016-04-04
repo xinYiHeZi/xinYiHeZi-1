@@ -19,6 +19,13 @@
 		A7CE95D51CA7A05F00015E5C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CE95D41CA7A05F00015E5C /* AppDelegate.m */; };
 		A7CE95DD1CA7A05F00015E5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7CE95DC1CA7A05F00015E5C /* Assets.xcassets */; };
 		A7CE95E01CA7A05F00015E5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7CE95DE1CA7A05F00015E5C /* LaunchScreen.storyboard */; };
+		B7A516E91CB222AC008E9016 /* XYNetWorkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B7A516E81CB222AC008E9016 /* XYNetWorkTool.m */; };
+		B7A516EC1CB222C5008E9016 /* XYActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7A516EB1CB222C5008E9016 /* XYActivityViewController.m */; };
+		B7A517051CB223BE008E9016 /* XYActivityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B7A517021CB223BE008E9016 /* XYActivityCell.m */; };
+		B7A517061CB223BE008E9016 /* XYGoodsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B7A517041CB223BE008E9016 /* XYGoodsCell.m */; };
+		B7A5170B1CB223D0008E9016 /* XYActivityData.m in Sources */ = {isa = PBXBuildFile; fileRef = B7A517081CB223D0008E9016 /* XYActivityData.m */; };
+		B7A5170C1CB223D0008E9016 /* XYGoods.m in Sources */ = {isa = PBXBuildFile; fileRef = B7A5170A1CB223D0008E9016 /* XYGoods.m */; };
+		B7A5170E1CB2249D008E9016 /* activity.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7A5170D1CB2249D008E9016 /* activity.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +53,19 @@
 		A7CE95DC1CA7A05F00015E5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A7CE95DF1CA7A05F00015E5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A7CE95E11CA7A05F00015E5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7A516E71CB222AC008E9016 /* XYNetWorkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYNetWorkTool.h; sourceTree = "<group>"; };
+		B7A516E81CB222AC008E9016 /* XYNetWorkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYNetWorkTool.m; sourceTree = "<group>"; };
+		B7A516EA1CB222C5008E9016 /* XYActivityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYActivityViewController.h; sourceTree = "<group>"; };
+		B7A516EB1CB222C5008E9016 /* XYActivityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYActivityViewController.m; sourceTree = "<group>"; };
+		B7A517011CB223BE008E9016 /* XYActivityCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYActivityCell.h; sourceTree = "<group>"; };
+		B7A517021CB223BE008E9016 /* XYActivityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYActivityCell.m; sourceTree = "<group>"; };
+		B7A517031CB223BE008E9016 /* XYGoodsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYGoodsCell.h; sourceTree = "<group>"; };
+		B7A517041CB223BE008E9016 /* XYGoodsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYGoodsCell.m; sourceTree = "<group>"; };
+		B7A517071CB223D0008E9016 /* XYActivityData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYActivityData.h; sourceTree = "<group>"; };
+		B7A517081CB223D0008E9016 /* XYActivityData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYActivityData.m; sourceTree = "<group>"; };
+		B7A517091CB223D0008E9016 /* XYGoods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYGoods.h; sourceTree = "<group>"; };
+		B7A5170A1CB223D0008E9016 /* XYGoods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYGoods.m; sourceTree = "<group>"; };
+		B7A5170D1CB2249D008E9016 /* activity.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = activity.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,9 +179,10 @@
 		A74796FF1CA80817004D519C /* Home(首页) */ = {
 			isa = PBXGroup;
 			children = (
+				B7A516E61CB22298008E9016 /* Tools */,
+				B7A516FF1CB223AD008E9016 /* model */,
+				B7A517001CB223AD008E9016 /* View */,
 				A74797001CA80817004D519C /* Controller */,
-				A74797011CA80817004D519C /* Model */,
-				A74797021CA80817004D519C /* View */,
 			);
 			path = "Home(首页)";
 			sourceTree = "<group>";
@@ -169,24 +190,13 @@
 		A74797001CA80817004D519C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				B7A5170D1CB2249D008E9016 /* activity.storyboard */,
 				A747971F1CA80D23004D519C /* XYHZHomeController.h */,
 				A74797201CA80D23004D519C /* XYHZHomeController.m */,
+				B7A516EA1CB222C5008E9016 /* XYActivityViewController.h */,
+				B7A516EB1CB222C5008E9016 /* XYActivityViewController.m */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		A74797011CA80817004D519C /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		A74797021CA80817004D519C /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		A74797031CA80817004D519C /* Mine(我的) */ = {
@@ -306,6 +316,37 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B7A516E61CB22298008E9016 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				B7A516E71CB222AC008E9016 /* XYNetWorkTool.h */,
+				B7A516E81CB222AC008E9016 /* XYNetWorkTool.m */,
+			);
+			name = Tools;
+			sourceTree = "<group>";
+		};
+		B7A516FF1CB223AD008E9016 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				B7A517071CB223D0008E9016 /* XYActivityData.h */,
+				B7A517081CB223D0008E9016 /* XYActivityData.m */,
+				B7A517091CB223D0008E9016 /* XYGoods.h */,
+				B7A5170A1CB223D0008E9016 /* XYGoods.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		B7A517001CB223AD008E9016 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B7A517011CB223BE008E9016 /* XYActivityCell.h */,
+				B7A517021CB223BE008E9016 /* XYActivityCell.m */,
+				B7A517031CB223BE008E9016 /* XYGoodsCell.h */,
+				B7A517041CB223BE008E9016 /* XYGoodsCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -368,6 +409,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7A5170E1CB2249D008E9016 /* activity.storyboard in Resources */,
 				A7CE95E01CA7A05F00015E5C /* LaunchScreen.storyboard in Resources */,
 				A7CE95DD1CA7A05F00015E5C /* Assets.xcassets in Resources */,
 			);
@@ -429,12 +471,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				A747971E1CA80D11004D519C /* XYHZCategoryController.m in Sources */,
+				B7A517051CB223BE008E9016 /* XYActivityCell.m in Sources */,
 				A747971B1CA80CEF004D519C /* XYHZGoodController.m in Sources */,
 				A74797121CA80926004D519C /* XYHZTabBarController.m in Sources */,
+				B7A516E91CB222AC008E9016 /* XYNetWorkTool.m in Sources */,
+				B7A5170B1CB223D0008E9016 /* XYActivityData.m in Sources */,
 				A74797151CA809DF004D519C /* XYHZNavigationController.m in Sources */,
 				A7CE95D51CA7A05F00015E5C /* AppDelegate.m in Sources */,
 				A7CE95D21CA7A05F00015E5C /* main.m in Sources */,
 				A74797241CA80D70004D519C /* XYHZMineController.m in Sources */,
+				B7A5170C1CB223D0008E9016 /* XYGoods.m in Sources */,
+				B7A516EC1CB222C5008E9016 /* XYActivityViewController.m in Sources */,
+				B7A517061CB223BE008E9016 /* XYGoodsCell.m in Sources */,
 				A74797181CA80C34004D519C /* XYHZStrategyController.m in Sources */,
 				A74797211CA80D23004D519C /* XYHZHomeController.m in Sources */,
 			);
