@@ -6,10 +6,10 @@
 //  Copyright © 2016年 xiaoyu. All rights reserved.
 //
 
-#import "XYActivityData.h"
-#import "XYNetWorkTool.h"
-#import "XYGoods.h"
-@implementation XYActivityData
+#import "XYHZActivityData.h"
+#import "XYHZNetWorkTool.h"
+#import "XYHZGoods.h"
+@implementation XYHZActivityData
 
 
 +(instancetype)activityDataWithDict:(NSDictionary*)dict{
@@ -27,7 +27,7 @@
     //断言判断必须传入回调
     NSAssert(success!=nil, @"回调不能为空");
     
-    [[XYNetWorkTool sharedNetworkTool]GET:URLStr parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
+    [[XYHZNetWorkTool sharedNetworkTool]GET:URLStr parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
         
     } success:^(NSURLSessionDataTask * _Nonnull task, NSDictionary* responseObject) {
         
@@ -41,9 +41,9 @@
         NSMutableArray *arrM=[NSMutableArray array];
         //遍历数组
         [activity enumerateObjectsUsingBlock:^(NSDictionary* obj, NSUInteger idx, BOOL * _Nonnull stop) {
-            XYActivityData *activity=[XYActivityData activityDataWithDict:obj];
+            XYHZActivityData *activity=[XYHZActivityData activityDataWithDict:obj];
             //嵌套字典转模型
-            activity.goods=[XYGoods goosWithArray:activity.goods];
+            activity.goods=[XYHZGoods goosWithArray:activity.goods];
             
             [arrM addObject:activity];
         }];

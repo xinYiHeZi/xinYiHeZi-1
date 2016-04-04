@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface XYActivityViewController : UITableViewController
+@interface XYHZActivityViewController : UITableViewController
 
 @end

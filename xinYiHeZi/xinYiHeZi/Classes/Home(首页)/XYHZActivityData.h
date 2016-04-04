@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface XYActivityData : NSObject
+@interface XYHZActivityData : NSObject
 //商品
 @property(nonatomic,strong)NSArray*goods;
 //展示全部商品的url

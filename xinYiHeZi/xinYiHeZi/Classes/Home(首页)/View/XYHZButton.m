@@ -6,9 +6,9 @@
 //  Copyright © 2016年 xiaoyu. All rights reserved.
 //
 
-#import "XYButton.h"
+#import "XYHZButton.h"
 
-@implementation XYButton
+@implementation XYHZButton
 
 /*
 // Only override drawRect: if you perform custom drawing.

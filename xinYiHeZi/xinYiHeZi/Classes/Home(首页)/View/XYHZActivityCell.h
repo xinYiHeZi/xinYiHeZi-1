@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-@class XYActivityData;
-@interface XYActivityCell : UITableViewCell
+@class XYHZActivityData;
+@interface XYHZActivityCell : UITableViewCell
 //数据
-@property(nonatomic,strong)XYActivityData*activitys;
+@property(nonatomic,strong)XYHZActivityData*activitys;
 @end

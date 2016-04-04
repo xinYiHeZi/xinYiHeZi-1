@@ -6,11 +6,11 @@
 //  Copyright © 2016年 xiaoyu. All rights reserved.
 //
 
-#import "XYNetWorkTool.h"
+#import "XYHZNetWorkTool.h"
 
-@implementation XYNetWorkTool
+@implementation XYHZNetWorkTool
 + (instancetype)sharedNetworkTool{
-    static XYNetWorkTool *instance=nil;
+    static XYHZNetWorkTool *instance=nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         NSURL *baseURL=[NSURL URLWithString:@"http://app.xinyihezi.com:8888/"];

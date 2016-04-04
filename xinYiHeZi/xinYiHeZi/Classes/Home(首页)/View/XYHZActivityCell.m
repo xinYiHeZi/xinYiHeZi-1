@@ -6,20 +6,21 @@
 //  Copyright © 2016年 xiaoyu. All rights reserved.
 //
 
-#import "XYActivityCell.h"
+#import "XYHZActivityCell.h"
 #import <UIButton+WebCache.h>
-#import "XYActivityData.h"
-#import "XYGoods.h"
-#import "XYGoodsCell.h"
-#import "XYButton.h"
-@interface XYActivityCell()<UICollectionViewDataSource,UICollectionViewDelegate>
-@property (weak, nonatomic) IBOutlet XYButton *shareButton;
+#import "XYHZActivityData.h"
+#import "XYHZGoods.h"
+#import "XYHZGoodsCell.h"
+#import "XYHZButton.h"
+@interface XYHZActivityCell()<UICollectionViewDataSource,UICollectionViewDelegate>
+@property (weak, nonatomic) IBOutlet XYHZButton *shareButton;
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (weak, nonatomic) IBOutlet UICollectionViewFlowLayout *layout;
 //商品的详细信息
 @property(nonatomic,strong)NSArray*goods;
 @end
-@implementation XYActivityCell
+
+@implementation XYHZActivityCell
 
 -(void)awakeFromNib{
     self.collectionView.dataSource=self;
@@ -40,13 +41,13 @@
     return self.goods.count;
 }
 -(UICollectionViewCell*)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
-    XYGoodsCell *cell=[collectionView dequeueReusableCellWithReuseIdentifier:@"goods" forIndexPath:indexPath];
+    XYHZGoodsCell *cell=[collectionView dequeueReusableCellWithReuseIdentifier:@"goods" forIndexPath:indexPath];
     
     cell.goods=self.goods[indexPath.item];
     return cell;
 }
 #pragma mark set方法
--(void)setActivitys:(XYActivityData *)activitys{
+-(void)setActivitys:(XYHZActivityData *)activitys{
     _activitys=activitys;
     //为button赋值
     NSURL *URL=[NSURL URLWithString:activitys.url];

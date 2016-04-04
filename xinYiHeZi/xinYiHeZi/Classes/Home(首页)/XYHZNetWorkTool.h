@@ -8,6 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import <AFNetworking/AFNetworking.h>
-@interface XYNetWorkTool : AFHTTPSessionManager
+@interface XYHZNetWorkTool : AFHTTPSessionManager
 + (instancetype)sharedNetworkTool;
 @end

@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface XYGoods : NSObject
+@interface XYHZGoods : NSObject
 
 //商品的id
 @property(nonatomic,strong)NSNumber *goods_id;

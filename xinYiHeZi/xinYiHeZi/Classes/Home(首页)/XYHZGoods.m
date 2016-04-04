@@ -6,9 +6,9 @@
 //  Copyright © 2016年 xiaoyu. All rights reserved.
 //
 
-#import "XYGoods.h"
+#import "XYHZGoods.h"
 
-@implementation XYGoods
+@implementation XYHZGoods
 
 +(instancetype)goosWithDict:(NSDictionary*)dict{
     id obj=[[self alloc]init];
@@ -21,7 +21,7 @@
 +(NSArray*)goosWithArray:(NSArray*)array{
     NSMutableArray *arrM=[NSMutableArray array];
     for (NSDictionary *dict in array) {
-        XYGoods *goos=[XYGoods goosWithDict:dict];
+        XYHZGoods *goos=[XYHZGoods goosWithDict:dict];
         [arrM addObject:goos];
     }
     return arrM;

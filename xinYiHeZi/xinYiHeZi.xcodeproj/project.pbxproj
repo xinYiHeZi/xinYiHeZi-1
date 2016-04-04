@@ -19,14 +19,14 @@
 		A7CE95D51CA7A05F00015E5C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CE95D41CA7A05F00015E5C /* AppDelegate.m */; };
 		A7CE95DD1CA7A05F00015E5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7CE95DC1CA7A05F00015E5C /* Assets.xcassets */; };
 		A7CE95E01CA7A05F00015E5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7CE95DE1CA7A05F00015E5C /* LaunchScreen.storyboard */; };
-		B7A516E91CB222AC008E9016 /* XYNetWorkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B7A516E81CB222AC008E9016 /* XYNetWorkTool.m */; };
-		B7A516EC1CB222C5008E9016 /* XYActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7A516EB1CB222C5008E9016 /* XYActivityViewController.m */; };
-		B7A517051CB223BE008E9016 /* XYActivityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B7A517021CB223BE008E9016 /* XYActivityCell.m */; };
-		B7A517061CB223BE008E9016 /* XYGoodsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B7A517041CB223BE008E9016 /* XYGoodsCell.m */; };
-		B7A5170B1CB223D0008E9016 /* XYActivityData.m in Sources */ = {isa = PBXBuildFile; fileRef = B7A517081CB223D0008E9016 /* XYActivityData.m */; };
-		B7A5170C1CB223D0008E9016 /* XYGoods.m in Sources */ = {isa = PBXBuildFile; fileRef = B7A5170A1CB223D0008E9016 /* XYGoods.m */; };
+		B7A516E91CB222AC008E9016 /* XYHZNetWorkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B7A516E81CB222AC008E9016 /* XYHZNetWorkTool.m */; };
 		B7A5170E1CB2249D008E9016 /* activity.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7A5170D1CB2249D008E9016 /* activity.storyboard */; };
-		B7A517141CB250B6008E9016 /* XYButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B7A517131CB250B6008E9016 /* XYButton.m */; };
+		B7A517191CB25972008E9016 /* XYHZActivityData.m in Sources */ = {isa = PBXBuildFile; fileRef = B7A517161CB25972008E9016 /* XYHZActivityData.m */; };
+		B7A5171A1CB25972008E9016 /* XYHZGoods.m in Sources */ = {isa = PBXBuildFile; fileRef = B7A517181CB25972008E9016 /* XYHZGoods.m */; };
+		B7A517211CB259AA008E9016 /* XYHZActivityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B7A5171C1CB259AA008E9016 /* XYHZActivityCell.m */; };
+		B7A517221CB259AA008E9016 /* XYHZButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B7A5171E1CB259AA008E9016 /* XYHZButton.m */; };
+		B7A517231CB259AA008E9016 /* XYHZGoodsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B7A517201CB259AA008E9016 /* XYHZGoodsCell.m */; };
+		B7A517261CB259CE008E9016 /* XYHZActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7A517251CB259CE008E9016 /* XYHZActivityViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,21 +54,21 @@
 		A7CE95DC1CA7A05F00015E5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A7CE95DF1CA7A05F00015E5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A7CE95E11CA7A05F00015E5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B7A516E71CB222AC008E9016 /* XYNetWorkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYNetWorkTool.h; sourceTree = "<group>"; };
-		B7A516E81CB222AC008E9016 /* XYNetWorkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYNetWorkTool.m; sourceTree = "<group>"; };
-		B7A516EA1CB222C5008E9016 /* XYActivityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYActivityViewController.h; sourceTree = "<group>"; };
-		B7A516EB1CB222C5008E9016 /* XYActivityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYActivityViewController.m; sourceTree = "<group>"; };
-		B7A517011CB223BE008E9016 /* XYActivityCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYActivityCell.h; sourceTree = "<group>"; };
-		B7A517021CB223BE008E9016 /* XYActivityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYActivityCell.m; sourceTree = "<group>"; };
-		B7A517031CB223BE008E9016 /* XYGoodsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYGoodsCell.h; sourceTree = "<group>"; };
-		B7A517041CB223BE008E9016 /* XYGoodsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYGoodsCell.m; sourceTree = "<group>"; };
-		B7A517071CB223D0008E9016 /* XYActivityData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYActivityData.h; sourceTree = "<group>"; };
-		B7A517081CB223D0008E9016 /* XYActivityData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYActivityData.m; sourceTree = "<group>"; };
-		B7A517091CB223D0008E9016 /* XYGoods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYGoods.h; sourceTree = "<group>"; };
-		B7A5170A1CB223D0008E9016 /* XYGoods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYGoods.m; sourceTree = "<group>"; };
+		B7A516E71CB222AC008E9016 /* XYHZNetWorkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYHZNetWorkTool.h; sourceTree = "<group>"; };
+		B7A516E81CB222AC008E9016 /* XYHZNetWorkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYHZNetWorkTool.m; sourceTree = "<group>"; };
 		B7A5170D1CB2249D008E9016 /* activity.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = activity.storyboard; sourceTree = "<group>"; };
-		B7A517121CB250B6008E9016 /* XYButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYButton.h; sourceTree = "<group>"; };
-		B7A517131CB250B6008E9016 /* XYButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYButton.m; sourceTree = "<group>"; };
+		B7A517151CB25972008E9016 /* XYHZActivityData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XYHZActivityData.h; path = ../XYHZActivityData.h; sourceTree = "<group>"; };
+		B7A517161CB25972008E9016 /* XYHZActivityData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XYHZActivityData.m; path = ../XYHZActivityData.m; sourceTree = "<group>"; };
+		B7A517171CB25972008E9016 /* XYHZGoods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XYHZGoods.h; path = ../XYHZGoods.h; sourceTree = "<group>"; };
+		B7A517181CB25972008E9016 /* XYHZGoods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XYHZGoods.m; path = ../XYHZGoods.m; sourceTree = "<group>"; };
+		B7A5171B1CB259AA008E9016 /* XYHZActivityCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYHZActivityCell.h; sourceTree = "<group>"; };
+		B7A5171C1CB259AA008E9016 /* XYHZActivityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYHZActivityCell.m; sourceTree = "<group>"; };
+		B7A5171D1CB259AA008E9016 /* XYHZButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYHZButton.h; sourceTree = "<group>"; };
+		B7A5171E1CB259AA008E9016 /* XYHZButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYHZButton.m; sourceTree = "<group>"; };
+		B7A5171F1CB259AA008E9016 /* XYHZGoodsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYHZGoodsCell.h; sourceTree = "<group>"; };
+		B7A517201CB259AA008E9016 /* XYHZGoodsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYHZGoodsCell.m; sourceTree = "<group>"; };
+		B7A517241CB259CE008E9016 /* XYHZActivityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYHZActivityViewController.h; sourceTree = "<group>"; };
+		B7A517251CB259CE008E9016 /* XYHZActivityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYHZActivityViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,8 +185,6 @@
 				B7A516E61CB22298008E9016 /* Tools */,
 				B7A516FF1CB223AD008E9016 /* model */,
 				B7A517001CB223AD008E9016 /* View */,
-				B7A517121CB250B6008E9016 /* XYButton.h */,
-				B7A517131CB250B6008E9016 /* XYButton.m */,
 				A74797001CA80817004D519C /* Controller */,
 			);
 			path = "Home(首页)";
@@ -198,8 +196,8 @@
 				B7A5170D1CB2249D008E9016 /* activity.storyboard */,
 				A747971F1CA80D23004D519C /* XYHZHomeController.h */,
 				A74797201CA80D23004D519C /* XYHZHomeController.m */,
-				B7A516EA1CB222C5008E9016 /* XYActivityViewController.h */,
-				B7A516EB1CB222C5008E9016 /* XYActivityViewController.m */,
+				B7A517241CB259CE008E9016 /* XYHZActivityViewController.h */,
+				B7A517251CB259CE008E9016 /* XYHZActivityViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -324,8 +322,8 @@
 		B7A516E61CB22298008E9016 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				B7A516E71CB222AC008E9016 /* XYNetWorkTool.h */,
-				B7A516E81CB222AC008E9016 /* XYNetWorkTool.m */,
+				B7A516E71CB222AC008E9016 /* XYHZNetWorkTool.h */,
+				B7A516E81CB222AC008E9016 /* XYHZNetWorkTool.m */,
 			);
 			name = Tools;
 			sourceTree = "<group>";
@@ -333,10 +331,10 @@
 		B7A516FF1CB223AD008E9016 /* model */ = {
 			isa = PBXGroup;
 			children = (
-				B7A517071CB223D0008E9016 /* XYActivityData.h */,
-				B7A517081CB223D0008E9016 /* XYActivityData.m */,
-				B7A517091CB223D0008E9016 /* XYGoods.h */,
-				B7A5170A1CB223D0008E9016 /* XYGoods.m */,
+				B7A517151CB25972008E9016 /* XYHZActivityData.h */,
+				B7A517161CB25972008E9016 /* XYHZActivityData.m */,
+				B7A517171CB25972008E9016 /* XYHZGoods.h */,
+				B7A517181CB25972008E9016 /* XYHZGoods.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -344,10 +342,12 @@
 		B7A517001CB223AD008E9016 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				B7A517011CB223BE008E9016 /* XYActivityCell.h */,
-				B7A517021CB223BE008E9016 /* XYActivityCell.m */,
-				B7A517031CB223BE008E9016 /* XYGoodsCell.h */,
-				B7A517041CB223BE008E9016 /* XYGoodsCell.m */,
+				B7A5171B1CB259AA008E9016 /* XYHZActivityCell.h */,
+				B7A5171C1CB259AA008E9016 /* XYHZActivityCell.m */,
+				B7A5171D1CB259AA008E9016 /* XYHZButton.h */,
+				B7A5171E1CB259AA008E9016 /* XYHZButton.m */,
+				B7A5171F1CB259AA008E9016 /* XYHZGoodsCell.h */,
+				B7A517201CB259AA008E9016 /* XYHZGoodsCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -476,21 +476,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				A747971E1CA80D11004D519C /* XYHZCategoryController.m in Sources */,
-				B7A517051CB223BE008E9016 /* XYActivityCell.m in Sources */,
-				B7A517141CB250B6008E9016 /* XYButton.m in Sources */,
 				A747971B1CA80CEF004D519C /* XYHZGoodController.m in Sources */,
+				B7A517221CB259AA008E9016 /* XYHZButton.m in Sources */,
 				A74797121CA80926004D519C /* XYHZTabBarController.m in Sources */,
-				B7A516E91CB222AC008E9016 /* XYNetWorkTool.m in Sources */,
-				B7A5170B1CB223D0008E9016 /* XYActivityData.m in Sources */,
+				B7A5171A1CB25972008E9016 /* XYHZGoods.m in Sources */,
+				B7A516E91CB222AC008E9016 /* XYHZNetWorkTool.m in Sources */,
+				B7A517261CB259CE008E9016 /* XYHZActivityViewController.m in Sources */,
+				B7A517191CB25972008E9016 /* XYHZActivityData.m in Sources */,
 				A74797151CA809DF004D519C /* XYHZNavigationController.m in Sources */,
 				A7CE95D51CA7A05F00015E5C /* AppDelegate.m in Sources */,
+				B7A517231CB259AA008E9016 /* XYHZGoodsCell.m in Sources */,
 				A7CE95D21CA7A05F00015E5C /* main.m in Sources */,
 				A74797241CA80D70004D519C /* XYHZMineController.m in Sources */,
-				B7A5170C1CB223D0008E9016 /* XYGoods.m in Sources */,
-				B7A516EC1CB222C5008E9016 /* XYActivityViewController.m in Sources */,
-				B7A517061CB223BE008E9016 /* XYGoodsCell.m in Sources */,
 				A74797181CA80C34004D519C /* XYHZStrategyController.m in Sources */,
 				A74797211CA80D23004D519C /* XYHZHomeController.m in Sources */,
+				B7A517211CB259AA008E9016 /* XYHZActivityCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

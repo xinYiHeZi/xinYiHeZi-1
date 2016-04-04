@@ -1,5 +1,5 @@
 //
-//  XYButton.h
+//  XYGoodsCell.h
 //  wodemokuai
 //
 //  Created by lixinyu on 16/4/4.
@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface XYButton : UIButton
-
+@class XYHZGoods;
+@interface XYHZGoodsCell : UICollectionViewCell
+//数据源
+@property(nonatomic,strong)XYHZGoods*goods;
 @end

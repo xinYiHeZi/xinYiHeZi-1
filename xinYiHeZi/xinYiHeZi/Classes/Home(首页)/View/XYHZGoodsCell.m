@@ -6,18 +6,18 @@
 //  Copyright © 2016年 xiaoyu. All rights reserved.
 //
 
-#import "XYGoodsCell.h"
+#import "XYHZGoodsCell.h"
 #import <UIImageView+WebCache.h>
-#import "XYGoods.h"
-@interface XYGoodsCell()
+#import "XYHZGoods.h"
+@interface XYHZGoodsCell()
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (weak, nonatomic) IBOutlet UILabel *dsrLabel;
 @property (weak, nonatomic) IBOutlet UILabel *priceLabel;
 
 @end
-@implementation XYGoodsCell
+@implementation XYHZGoodsCell
 
--(void)setGoods:(XYGoods *)goods{
+-(void)setGoods:(XYHZGoods *)goods{
     _goods=goods;
     
     [self.imageView sd_setImageWithURL:[NSURL URLWithString:goods.image_url]];
